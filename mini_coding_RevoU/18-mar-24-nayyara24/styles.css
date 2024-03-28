@@ -1,0 +1,248 @@
+/* Css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Styles for contact form */
+#contact {
+    width: 25%;
+    background-color: #ccc;
+    padding: 20px;
+}
+
+#contact h2 {
+    margin-top: 0;
+}
+
+#contactForm label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#contactForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #45a049;
+}
+
+/* Styles for image upload */
+#image-upload {
+    width: 60%;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#image-upload h2 {
+    margin-top: 0;
+}
+
+#uploadedImage {
+    margin-top: 10px;
+}
+
+#image-upload figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#destinations {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Lighter gray background */
+}
+
+#destinations h2 {
+    margin-top: 0;
+}
+
+#destinations ol {
+    list-style-type: none;
+    counter-reset: list-counter; /* Reset the counter */
+}
+
+#destinations ol li {
+    counter-increment: list-counter; /* Increment the counter */
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#destinations ol li:before {
+    content: counter(list-counter);
+    background-color: #007bff; /* Color for the counter */
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+header {
+    background-color: #454749;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact {
+    width: 45%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+#contact h2 {
+    margin-top: 0;
+}
+
+#contactForm {
+    width: 100%;
+}
+
+#contactForm label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contactForm input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#contactForm button {
+    padding: 10px 20px;
+    background-color: #333436;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#image-upload {
+    width: 45%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+#image-upload label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#destination-options {
+    background-color: #f0f0f0;
+    padding: 60px;
+    border-radius: 10px;
+}
+
+#destination-options h2 {
+    margin-top: 0;
+}
+
+#destination-options ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#destination-options li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #007bff; /* Blue color for options */
+}
+
+#destination-options li::before {
+    content: "\2022"; /* Bullet point */
+    color: #007bff; /* Blue color for bullet */
+    font-size: 20px;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact {
+    width: 30%;
+    float: left;
+}
+
+#image-upload {
+    width: 30%;
+    float: right;
+}
+
+#destination-options {
+    width: 30%;
+    float: right;
+    clear: right;
+}
+
+#main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+#destination-options {
+    width: 30%;
+    float: right;
+}
+
+#image-upload {
+    width: calc(100% - 30%); /* Menggunakan calc() untuk menghitung lebar sisa */
+    float: right;
+}
